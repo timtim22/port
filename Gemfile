@@ -26,6 +26,8 @@ gem 'ostruct'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery'
 gem 'jquery-rails'
+gem 'petergate', '~> 1.6', '>= 1.6.3'
+gem 'my_view_tool', git: 'https://github.com/timtim22/my_view_tool'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
