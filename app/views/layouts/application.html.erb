@@ -15,17 +15,15 @@
   </head>
 
   <body>
-      <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+      <div class="container d-flex h-100 p-3 mx-auto flex-column">
 
-       <%= render  "shared/nav", location: 'top' %>
+        <%= render  "shared/application_nav", location: 'top' %>
 
-      <%= login_helper %>
-
-    <%= yield %>
-    <p>
-    <%= copyright_generator %>
-
-    <%= source_helper("application") %>
+        <%= yield %>
+        <p>
+        
+        <%= render  "shared/application_footer" %>
+        <%= source_helper("application") %>
+      </div>
   </body>
 </html>

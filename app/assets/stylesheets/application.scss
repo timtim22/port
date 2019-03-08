@@ -45,7 +45,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 45em;
 }
 
 
@@ -54,10 +54,12 @@ body {
  */
 .masthead {
   margin-bottom: 2rem;
+
 }
 
 .masthead-brand {
   margin-bottom: 0;
+  text-align: left
 }
 
 .nav-masthead .nav-link {
@@ -82,7 +84,7 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   .masthead-brand {
     float: left;
   }
@@ -91,12 +93,16 @@ body {
   }
 }
 
+.container {
+  text-align: center;
+}
 
 /*
  * Cover
  */
 .cover {
   padding: 0 1.5rem;
+  text-align: center
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -109,4 +115,17 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+/*
+ * custom styles
+ */
+
+.card-body {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
 }
