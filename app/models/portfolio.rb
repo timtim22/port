@@ -9,6 +9,10 @@ class Portfolio < ApplicationRecord
         where(subtitle: 'Angular')
     end
 
+    def self.by_position
+        order("position ASC")
+    end
+
     scope :ruby_on_rails_portfolio_item, -> { where(:subtitle => 'Ruby on rails')}
     # Ex:- scope :active, -> {where(:active => true)}
 
