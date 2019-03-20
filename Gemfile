@@ -31,6 +31,7 @@ gem 'my_view_tool', git: 'https://github.com/timtim22/my_view_tool'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'will_paginate', '~> 3.1.1'
 gem 'will_paginate-bootstrap' 
+gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
