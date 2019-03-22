@@ -32,6 +32,10 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'will_paginate', '~> 3.1.1'
 gem 'will_paginate-bootstrap' 
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+gem 'carrierwave', '~> 0.11.2'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
+gem 'carrierwave-aws', '~> 1.0'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
