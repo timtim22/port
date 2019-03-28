@@ -1,37 +1,56 @@
-<div class="login">
-  <div class="card card-body transparent-style">
-    <div class="card-block">
-      <h2>Log in</h2>
+<div class="scene">
+	<div class="cube">
+		<nav class="steps">
+			<div class="dot step_1 done"></div>
+			<div class="dot step_2"></div>
+			<div class="dot step_3"></div>
+			<div class="dot step_4"></div>
+		</nav>
+		<div class="cube__face  cube__face--front" id="step__1">
+			<div class="container">
+				<input type="text" class="label" placeholder="Please pick a color" disabled>
+				<div class="radio">
+					<div class="item blue" data-color="blue"></div>
+					<div class="item yellow" data-color="yellow"></div>
+					<div class="item purple" data-color="purple"></div>
+					<div class="item green" data-color="green"></div>
+					<div class="item violet" data-color="violet"></div>
+				</div>
+				<div class="btn" style="display:none">
+					<span data-step="1">Continue</span>
+				</div>
+			</div>
+		</div>
+		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+		<div class="cube__face" id="step__2">
+			<div class="container">
+				<%= f.email_field :email, placeholder: "Enter Email Address" %>
+				<div class="btn">
+					<span data-step="2">Continue</span>
+				</div>
+			</div>
+		</div>
+		<div class="cube__face" id="step__3">
+			<div class="container">
+				<%= f.password_field :password, placeholder: "Enter Password" %>
+				<div class="btn">
+					<span data-step="3">Continue</span>
+				</div>
+			</div>
+		</div>
 
-      
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <div class="form-group">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control " %>
-        </div>
-
-        <div class="form-group">
-          <%= f.label :password %><br />
-          <%= f.password_field :password, autocomplete: "current-password", class: "form-control" %>
-        </div>
-
-        <% if devise_mapping.rememberable? %>
-          <div class="form-group">
-            <%= f.check_box :remember_me %>
-            <%= f.label :remember_me %>
-          </div>
-        <% end %>
-
-        <div class="form-group">
-          <%= f.submit "Log in", class: 'btn btn-primary-outline text-white'  %>
-        </div>
-      <% end %>
-      <div class="auth-links">
-        <%= render "devise/shared/links" %>
-      </div>
-      
-    </div>
-  </div>
+		<div class="cube__face" id="step__4">
+			<div class="container">
+				<%= f.submit "Submit", placeholder: "You are Amazing", class: "checkbox" %>
+					
+			</div>
+		</div>
+		<% end %>
+		<div class="auth-links">
+			<%= render "devise/shared/links" %>
+		</div>
+	</div>
 </div>
-
-
+<div class="welcome">
+	<div class="content">Welcome!</div>
+</div>

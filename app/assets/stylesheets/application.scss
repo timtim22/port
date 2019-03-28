@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "gritter";
+
 
 /*
  * Globals
@@ -102,6 +104,7 @@ body {
 .cover {
   padding: 0 1.5rem;
   text-align: center
+  
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -116,9 +119,24 @@ body {
   color: rgba(255, 255, 255, .5);
 }
 
+
 /*
  * custom styles
  */
+
+ .home-card {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Droid Serif',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-weight: 500;
+ }
+
+ .home-card h1 {
+   font-size: 75px;
+  
+ }
 
 .card-body {
   color: white;
@@ -165,6 +183,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
   background: image-url('background-image.jpg') no-repeat;
   background-size: cover;
+  
 }
 
 
@@ -183,3 +202,6 @@ body {
   background-color: transparent;
   color: white
 }
+
+
+//////////////////////////////////////////////////////////
