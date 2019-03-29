@@ -1,51 +1,87 @@
-  <div>
-  <div class=" card card-body transparent-style">
-    
-    <h2>Sign up</h2>
+<div class="scene">
+	<div class="cube">
+		<nav class="steps">
+			<div class="dot step_1 done"></div>
+			<div class="dot step_2"></div>
+			<div class="dot step_3"></div>
+			<div class="dot step_4"></div>
+			<div class="dot step_5"></div>
+			<div class="dot step_6"></div>
+		</nav>
+
+		<div class="cube__face  cube__face--front" id="step__1">
+			<div class="container">
+				<input type="text" class="label" placeholder="Please pick a color" disabled>
+				<div class="radio">
+					<div class="item blue" data-color="blue"></div>
+					<div class="item yellow" data-color="yellow"></div>
+					<div class="item purple" data-color="purple"></div>
+					<div class="item green" data-color="green"></div>
+					<div class="item violet" data-color="violet"></div>
+				</div>
+				<div class="btn" style="display:none">
+					<span data-step="1">Continue</span>
+				</div>
+			</div>
+		</div>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
 
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <%= f.label :email %><br />
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"  %>
-          </div>
-
-          <div class="form-group">
-            <%= f.label :name %><br />
-            <%= f.text_field :name, autocomplete: "name", class: "form-control"  %>
+      <div class="cube__face" id="step__2">
+        <div class="container">
+          <%= f.email_field :email, placeholder: "Enter Email Address" %>
+          <div class="btn">
+            <span data-step="2">Continue</span>
           </div>
         </div>
+		  </div>
 
-        <div class="col-md-6">
-          <div class="form-group">
-            <%= f.label :password %>
-            <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "new-password", class: "form-control"  %>
+      <div class="cube__face" id="step__3">
+        <div class="container">
+          <%= f.text_field :name, placeholder: "Enter Your name" %>
+          <div class="btn">
+            <span data-step="3">Continue</span>
           </div>
-
-          <div class="form-group">
-            <%= f.label :password_confirmation %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control"  %>
-          </div>
-        </div>
-
-        <div class="col-md-10"></div>
-        <div class="col-md-2">
-          <div class="form-group">
-            <%= f.submit "Sign up", class: 'btn btn-primary btn-block btn-primary-outline text-white' %>
-          </div>
-
-          <div class="auth-links register-text">
-            <%= render "devise/shared/links" %>
-           </div>
         </div>
       </div>
-    <% end %>
-  </div>
-  </div>
+
+      <div class="cube__face" id="step__4">
+        <div class="container">
+          <%= f.password_field :password, placeholder: "Enter Your Password" %>
+          <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em>
+              <% end %>
+          <div class="btn">
+            <span data-step="4">Continue</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cube__face" id="step__5">
+        <div class="container">
+          <%= f.password_field :password_confirmation, placeholder: "Confirm Your Password", onsubmit: "return false" %>
+          <div class="btn">
+            <span data-step="5">Continue</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cube__face" id="step__6">
+        <div class="container">
+          <%= f.submit "Submit", placeholder: "You are Amazing", class: "checkbox" %>
+            
+        </div>
+		  </div>
+		<% end %>
+		<div class="auth-links">
+			<%= render "devise/shared/links" %>
+		</div>
+	</div>
+</div>
+<div class="welcome">
+	<div class="content">Welcome!</div>
+</div>
