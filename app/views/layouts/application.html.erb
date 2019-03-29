@@ -28,12 +28,13 @@
         
         <%= render  "shared/application_nav", location: 'top' %>
 
-        <%= render  "shared/alerts" %>
+        
 
         <%= yield %>
         <p>
         
         <%= render  "shared/application_footer" %>
+        <%= alerts %>
         <%= source_helper("application") %>
       </div>
   </body>
