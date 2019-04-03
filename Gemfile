@@ -32,6 +32,9 @@ gem 'anime_js_rails'
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'gritter', '~> 1.2'
+gem 'twitter', '~> 6.2'
+gem 'hirb', '~> 0.7.3'
+
 
 
 group :development, :test do
