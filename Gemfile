@@ -34,6 +34,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.2'
 gem 'hirb', '~> 0.7.3'
+gem 'redis', '~> 3.3', '>= 3.3.1'
 
 
 
