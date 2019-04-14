@@ -50,9 +50,7 @@
       <div class="cube__face" id="step__4">
         <div class="container">
           <%= f.password_field :password, placeholder: "Enter Your Password" %>
-          <% if @minimum_password_length %>
-              <em>(<%= @minimum_password_length %> characters minimum)</em>
-              <% end %>
+        
           <div class="btn">
             <span data-step="4">Continue</span>
           </div>

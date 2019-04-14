@@ -235,6 +235,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    redcarpet (3.4.0)
     redis (3.3.5)
     regexp_parser (1.3.0)
     responders (2.4.1)
@@ -290,6 +291,8 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
+    typedjs-rails (2.0.9)
+      railties (>= 3.1)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     tzinfo-data (1.2018.9)
@@ -329,6 +332,7 @@ DEPENDENCIES
   carrierwave-aws (~> 1.0)
   chromedriver-helper
   cocoon (~> 1.2, >= 1.2.9)
+  coderay (~> 1.1, >= 1.1.2)
   coffee-rails (~> 4.2)
   devise
   dotenv-rails (~> 2.1, >= 2.1.1)
@@ -347,12 +351,14 @@ DEPENDENCIES
   pry-byebug
   puma (~> 3.11)
   rails (~> 5.2.2)
+  redcarpet (~> 3.4)
   redis (~> 3.3, >= 3.3.1)
   sass-rails (~> 5.0)
   selenium-webdriver
   sqlite3 (~> 1.3.8)
   turbolinks (~> 5)
   twitter (~> 6.2)
+  typedjs-rails (~> 2.0.9)
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
