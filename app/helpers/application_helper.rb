@@ -18,7 +18,7 @@ module ApplicationHelper
     end
 
     def copyright_generator
-        MyViewTool::Renderer.copyright 'Taimoor Hassan', 'All rights reserved'
+        MyViewTool::Renderer.copyright 'Taimoor Hassan', 'The site is in under construction'
     end
 
     def nav_items
