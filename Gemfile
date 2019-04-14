@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.5'
 gem 'rails', '~> 5.2.2'
-gem 'sqlite3', '~> 1.3.8'
+gem 'pg'
 gem 'puma', '~> 3.11'
 
 gem 'sass-rails', '~> 5.0'
@@ -42,6 +42,7 @@ gem "typedjs-rails", "~> 2.0.9"
 
 
 group :development, :test do
+  gem 'sqlite3', '~> 1.3.8'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
